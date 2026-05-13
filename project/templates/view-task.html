@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <section id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>description</th>
+                    <th>status</th>
+                    <th>created</th>
+                    <th>updated</th>
+                    <th>update status</th>
+                    <th>delete task</th>
+                    <th>toggle status</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">
+
+            </tbody>
+        </table>
+    </section>
+    <section id="update-sec" style="display: none;">
+        <div id="update-form">
+            <input id="update-title" name="taskname" type="text" maxlength="255" autocomplete="off" placeholder="task name">
+            <input id="update-description" name="description" type="text" autocomplete="off" placeholder="description">
+            <input id="update-status" name="status" maxlength="20" type="text" autocomplete="off" placeholder="status">
+            <button id="update" type="submit">Update</button>
+        </div>
+    </section>
+    <script src="/static/js/view-task.js"></script>
+    <script src="/static/js/del-task.js"></script>
+    <script src="/static/js/update-task.js"></script>
+    <script src="/static/js/toggler.js"></script>
+{% endblock %}

@@ -1,0 +1,8 @@
+sqlite> .schema tasks
+CREATE TABLE tasks (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+title VARCHAR(255) NOT NULL,
+description TEXT,
+status VARCHAR(20),
+created DEFAULT CURRENT_TIMESTAMP,
+updated DEFAULT CURRENT_TIMESTAMP);

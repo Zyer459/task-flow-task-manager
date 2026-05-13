@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+        <section>
+            <div>
+                <div id="task-form">
+                    <input id="title" name="taskname" type="text" maxlength="255" autocomplete="off" placeholder="task name">
+                    <input id="description" name="description" type="text" autocomplete="off" placeholder="description">
+                    <button id="add" type="submit">Add</button>
+                </div>
+            </div>
+        </section>
+        <script src="/static/js/add-task.js"></script>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <section id="update-sec">
+        <div id="update-form">
+            <input id="id" type="hidden" value="{{ id }}"> <!--used jinja here {{ id }} this id started from view-task.html to backend to here-->
+            <input id="update-title" name="taskname" type="text" maxlength="255" autocomplete="off" placeholder="task name">
+            <input id="update-description" name="description" type="text" autocomplete="off" placeholder="description">
+            <input id="update-status" name="status" maxlength="20" type="text" autocomplete="off" placeholder="status">
+            <button id="update" type="submit">Update</button>
+        </div>
+    </section>
+    <script src="/static/js/update-save.js"></script> <!--ran this script to send request to backend for update-->
+{% endblock %}

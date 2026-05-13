@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+ul#navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(199, 199, 199);
+    padding: 0.5rem;
+}
+ul#navbar a {
+    
+    text-decoration: none;
+    color: black;
+}
+
+/*view-task page*/
+section#table {
+    display: flex;
+    justify-content: center;
+}
+
+section#table tbody#task-list span.strike {
+    text-decoration: line-through;
+}
+
+section#table tbody#task-list td {
+    border: 5px solid black;
+    padding: 0.5rem;
+    text-align: center;
+}
+section#table tbody#task-list tr.backred {
+    background-color: rgb(128, 10, 10);
+    color: aliceblue;
+}
+section#table tbody#task-list tr.backgreen {
+    background-color: rgb(12, 148, 30);
+    color: aliceblue;
+}
+
+section#table table {
+    border-collapse: collapse;
+}
