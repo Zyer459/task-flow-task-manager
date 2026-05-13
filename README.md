@@ -1,8 +1,10 @@
 # task-flow-task-manager
 
 run on windows
+git clone "repository url"
+files downloaded 3
 
-1. open cmd as administrator
+1. open cmd(command prompt) as administrator
 2. goto drive by replace F with drive letter: "F:"
 3. create python virtual env by : "python -m venv test"
     3.1. or "py -m venv test"
